@@ -7,7 +7,8 @@
 	</bean>
 	
 	<bean id="itemService" class="beans.ItemServiceImpl">
-		<property name="itemDao" ref="itemDao" />
+		<constructor-arg ref="itemDao" />
+		<!-- <property name="itemDao" ref="itemDao" /> -->
 	</bean>
 
 </beans>

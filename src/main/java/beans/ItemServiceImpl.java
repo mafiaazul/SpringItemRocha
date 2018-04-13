@@ -4,10 +4,14 @@ public class ItemServiceImpl implements ItemService {
 	
 	private ItemDao itemDao;
 	
+	public ItemServiceImpl(ItemDao itemDao) {
+		this.itemDao = itemDao;
+	}
+	
 	public ItemDao getItemDao() {
 		return itemDao;
 	}
-	
+
 	public void setItemDao(ItemDao itemDao) {
 		this.itemDao = itemDao;
 	}
